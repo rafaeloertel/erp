@@ -2,8 +2,8 @@
 
 O ERP usa o login da conta Microsoft pessoal **rafael.oertel@gmail.com** para gravar no OneDrive dela. Para isso é preciso registrar um "aplicativo" gratuito no Microsoft Entra.
 
-1. Entre em https://entra.microsoft.com com **rafael.oertel@gmail.com**.
-   - Se a conta pessoal não abrir o Entra, use https://portal.azure.com com a mesma conta (cria um diretório padrão gratuito) e procure **App registrations**.
+1. Entre em https://entra.microsoft.com com uma conta **corporativa** que já tenha um locatário (tenant), por exemplo a de administrador da Nova Macabu.
+   - Conta pessoal (Gmail/Outlook) não abre o Entra: dá o erro "A conta de usuário selecionada não existe no locatário 'Microsoft Services'". O registro do app só precisa morar num locatário qualquer; quem faz login no ERP continua sendo a conta pessoal, e os dados vão para o OneDrive dela.
 2. **App registrations › New registration**
    - Name: `ERP Rafael`
    - Supported account types: **Personal Microsoft accounts only**
