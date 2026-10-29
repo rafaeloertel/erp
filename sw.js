@@ -2,8 +2,7 @@
    Arquivos do próprio site: rede primeiro (pega versão nova), cópia local se estiver offline.
    Chart.js (cdnjs): cópia local primeiro. Login e OneDrive (Microsoft) nunca passam pelo cache. */
 const VER = "erp-rafael-v0.4.6";
-const SHELL = ["./", "index.html", "manifest.json", "assets/app.css", "assets/msal-browser.min.js", "assets/icon-192.png", "assets/icon-512.png", "assets/apple-touch-icon.png",
-  "js/core.js", "js/icons.js", "js/ui-controls.js", "js/mod-inicio.js", "js/mod-reminders.js", "js/fin-modelo.js", "js/mod-financas.js", "js/fin-painel.js", "js/mod-investimentos.js", "js/mod-patrimonio.js", "js/mod-sistema.js"];
+const SHELL = ["./", "index.html", "manifest.json", "icon-192.png", "icon-512.png", "apple-touch-icon.png"];
 self.addEventListener("install", (e) => { e.waitUntil(caches.open(VER).then((c) => c.addAll(SHELL)).then(() => self.skipWaiting())); });
 self.addEventListener("activate", (e) => { e.waitUntil(caches.keys().then((ks) => Promise.all(ks.filter((k) => k !== VER).map((k) => caches.delete(k)))).then(() => self.clients.claim())); });
 self.addEventListener("fetch", (e) => {
