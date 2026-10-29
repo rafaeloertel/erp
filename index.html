@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#FFFFFF" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0C1320" media="(prefers-color-scheme: dark)">
+<meta name="robots" content="noindex,nofollow">
+<link rel="manifest" href="manifest.json">
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="ERP Rafael">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<title>ERP Rafael</title>
+<script>try{var t=JSON.parse(localStorage.getItem("erp.rafael.theme")||"\"\"");if(t==="light"||t==="dark")document.documentElement.dataset.theme=t}catch(e){}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/app.css?v=0.4.6">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20512%20512%22%3E%3Cstyle%3E.b%7Bfill:%23132634%7D%40media%20%28prefers-color-scheme:dark%29%7B.b%7Bfill:%23EEF2F8%7D%7D%3C/style%3E%3Crect%20x=%2282%22%20y=%22300%22%20width=%2264%22%20height=%22140%22%20rx=%226%22%20class=%22b%22/%3E%3Crect%20x=%22172%22%20y=%22226%22%20width=%2264%22%20height=%22214%22%20rx=%226%22%20class=%22b%22/%3E%3Crect%20x=%22262%22%20y=%22164%22%20width=%2264%22%20height=%22276%22%20rx=%226%22%20class=%22b%22/%3E%3Crect%20x=%22352%22%20y=%22130%22%20width=%2264%22%20height=%22310%22%20rx=%226%22%20class=%22b%22/%3E%3Ccircle%20cx=%22384%22%20cy=%2284%22%20r=%2236%22%20fill=%22%23FF1243%22/%3E%3C/svg%3E">
+</head>
+<body>
+<div class="app">
+  <aside class="side" id="side" aria-label="Módulos">
+    <a class="brand" href="#/inicio"><span class="mono"><svg viewBox="0 0 512 512" aria-hidden="true"><rect x="82" y="300" width="64" height="140" rx="6" fill="#132634"/><rect x="172" y="226" width="64" height="214" rx="6" fill="#132634"/><rect x="262" y="164" width="64" height="276" rx="6" fill="#132634"/><rect x="352" y="130" width="64" height="310" rx="6" fill="#132634"/><circle cx="384" cy="84" r="36" fill="#FF1243"/></svg></span><span><b>Rafael Oertel</b><small>ERP pessoal</small></span></a>
+    <nav class="nav" id="nav"></nav>
+    <div class="side-foot">
+      <button class="chip sync" title="Dados e sincronização"><i></i><span>Carregando…</span></button>
+      <button class="chip themebtn" type="button"></button>
+      <a href="#/sistema" id="navSis"></a>
+    </div>
+  </aside>
+  <header class="mtop">
+    <a class="mono" href="#/inicio" aria-label="Início"><svg viewBox="0 0 512 512" aria-hidden="true"><rect x="82" y="300" width="64" height="140" rx="6" fill="#132634"/><rect x="172" y="226" width="64" height="214" rx="6" fill="#132634"/><rect x="262" y="164" width="64" height="276" rx="6" fill="#132634"/><rect x="352" y="130" width="64" height="310" rx="6" fill="#132634"/><circle cx="384" cy="84" r="36" fill="#FF1243"/></svg></a>
+    <b id="mTitle">ERP Rafael</b>
+    <span class="sp"></span>
+    <button class="chip sync" title="Dados e sincronização"><i></i><span>Carregando…</span></button>
+    <button class="iconbtn themebtn" type="button"></button>
+    <a class="iconbtn" id="mSis" href="#/sistema" aria-label="Sistema"></a>
+  </header>
+  <main id="main"></main>
+  <nav class="tabbar" id="tabbar" aria-label="Módulos"></nav>
+</div>
+<script src="assets/msal-browser.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/chartjs-plugin-datalabels/2.2.0/chartjs-plugin-datalabels.min.js"></script>
+<script src="js/core.js?v=0.4.6"></script>
+<script src="js/icons.js?v=0.4.6"></script>
+<script src="js/ui-controls.js?v=0.4.6"></script>
+<script src="js/mod-inicio.js?v=0.4.6"></script>
+<script src="js/mod-reminders.js?v=0.4.6"></script>
+<script src="js/fin-modelo.js?v=0.4.6"></script>
+<script src="js/mod-financas.js?v=0.4.6"></script>
+<script src="js/fin-painel.js?v=0.4.6"></script>
+<script src="js/mod-investimentos.js?v=0.4.6"></script>
+<script src="js/mod-patrimonio.js?v=0.4.6"></script>
+<script src="js/mod-sistema.js?v=0.4.6"></script>
+<script>ERP.boot();</script>
+</body>
+</html>
